@@ -1,6 +1,6 @@
 import './App.css';
 
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 import Hooks from './components/Hooks';
 import UseState from './components/UseState';
@@ -16,10 +16,11 @@ function App() {
         <BrowserRouter>
           <Layout>
             <Switch>
-              <Route path="/" exact component={Hooks} />
-              <Route path="/usestate" exact component={UseState} />
-              <Route path="/useeffect" exact component={UseEffect} />
-              <Route path="/useref" exact component={UseRef} />
+              <Route path="/" exact component={() => <Redirect to="./react-hooks"/>}/>
+              <Route path="/react-hooks" exact component={Hooks} />
+              <Route path="/react-hooks/usestate" exact component={UseState} />
+              <Route path="/react-hooks/useeffect" exact component={UseEffect} />
+              <Route path="/react-hooks/useref" exact component={UseRef} />
             </Switch>
           </Layout>
         </BrowserRouter>
