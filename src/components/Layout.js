@@ -48,10 +48,10 @@ function Layout({children}, props) {
       <div className={classes.toolbar} />
       <Divider />
       <List>
-        {[{text: 'Intro Hooks', path: '/'}, 
-            {text: 'useState()', path: '/usestate'}, 
-            {text: 'useEffect()', path: '/useeffect'}, 
-            {text: 'useRef()', path: '/useref'}
+        {[{text: 'Intro Hooks', path: '/react-hooks'}, 
+            {text: 'useState()', path: '/react-hooks/usestate'}, 
+            {text: 'useEffect()', path: '/react-hooks/useeffect'}, 
+            {text: 'useRef()', path: '/react-hooks/useref'}
             ].map(item => (
             <ListItem button key={item.text} onClick={() => history.push(item.path)}>
             <ListItemText primary={item.text} />
