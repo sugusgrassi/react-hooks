@@ -2,7 +2,7 @@ import React, {useState, useRef} from 'react'
 
 function UseRef() {
 
-    const [ stateObj, setStateObj] = useState({theme: "yellow"})
+    const [ stateObj, setStateObj] = useState({theme: "blue"})
     const theme = stateObj.theme 
 
     const todoTaskRef = useRef();
@@ -30,13 +30,17 @@ function UseRef() {
     return (
         <div>
             <h2>useRef()</h2>
+            <p>Devuelve un objeto ref mutable cuya propiedad .current se inicializa con el argumento pasado (initialValue). El objeto devuelto se mantendrá persistente durante la vida completa del componente.</p>
+            <p>Un caso de uso común es para acceder a un hijo imperativamente</p>
+            <h4>Ejemplos:</h4>
             <input ref={todoTaskRef} type='text' placeholder='color'  />
-            <button onClick={handleTheme}>Change theme</button>
+            <button onClick={handleTheme}>Escribe un color en inglés</button>
             <br />
             <span className={{}} style={colorStyle}>{theme}</span>
+            <br /><br />
             <div>
             <input ref={inputEl} type="text" />
-            <button onClick={onButtonClick}>Focus the input</button>
+            <button onClick={onButtonClick}>Al hacer click pone foco en el input</button>
             </div>
         </div>
     )

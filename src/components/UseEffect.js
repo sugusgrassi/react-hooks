@@ -7,6 +7,7 @@ function UseEffect() {
     
     useEffect(() => {
         document.title=`${count}`
+        console.log(count)
     })
 
     useEffect(() => {
@@ -17,10 +18,10 @@ function UseEffect() {
     }, [resourceType])
 
     useEffect(() => {
-        console.log("resource change")
+        console.log("El recurso cambia")
 
         return () => {
-            console.log("clean")
+            console.log("Limpia")
         }
     }, [resourceType]) 
 
@@ -31,15 +32,44 @@ function UseEffect() {
                 <h2>useEffect()</h2>
                 <p>Agrega la capacidad de realizar efectos secundarios desde un componente de función</p>
                 <p>Los efectos también pueden especificar opcionalmente cómo “limpiar” después de ellos devolviendo una función</p>
-                <span>Title number </span>
-                <button onClick={() => setCount(count+1)}>+</button>
+                <h4>Ejemplo cuando se monta y renderiza con cualquier cambio dentro del componente:</h4>
+                <span>Cambia el título</span>
                 <button onClick={() => setCount(prevState => prevState -1)}>-</button>
-                <br /><br />
+                <button onClick={() => setCount(count+1)}>+</button>
+                <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
+                {`
+    useEffect(() => {
+        document.title=${`${count}`}
+    })
+                `}</pre>
+                <h4>Ejemplo cuando se monta y actualiza solo cuando cambia el recurso:</h4>
                 <button onClick={() => setResourceType("posts")}>Posts</button>
                 <button onClick={() => setResourceType("todos")}>todos</button>
                 <button onClick={() => setResourceType("comments")}>comments</button>
                 {
                     filterArr.map(item => <p key={item.id}>{JSON.stringify(item)}</p>)}
+                    <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
+                {`
+useEffect(() => {
+    fetch(${`https://jsonplaceholder.typicode.com/${resourceType}`})
+    .then(response => response.json())
+    .then(json => setItems(json))
+    .catch(error => console.log(error))
+}, [resourceType])
+                
+                `}</pre>
+                <h4>Ejemplo cuando se monta y se desmonta (ver en consola):</h4>
+                <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
+                {`
+useEffect(() => {
+    console.log("El recurso cambia")
+
+    return () => {
+        console.log("Limpia")
+    }
+}, [resourceType]) 
+                `}
+                </pre>
         </div>
     )
 }

@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
 
-// function component
-// don't use hooks inside a conditional
-// same order
-
 function InitialState() {
     console.log("run InitialState")
     return 0
 }
 
 function UseState() {
-    // const [ currentState, function ] = useState(initialValue or function)
+
     const [count, setCount] = useState(() => InitialState())
-    const [ list ] = useState(["tomato, lemon, carrot"])
 
     const handleMin = () => {
         count > 0 ? setCount(prevCount => prevCount -1) : setCount(count)
@@ -20,8 +15,6 @@ function UseState() {
 
     const handlePlus = () => {
         setCount(prevCount => prevCount +1)
-        console.log(count)
-
     }
 
     return (
@@ -33,34 +26,41 @@ function UseState() {
                 <h4>Ejemplo (código y uso):</h4>
                 <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
                 {`
-const [count, setCount] = useState(() => InitialState())
-const [ list, setList ] = useState(["tomato, lemon, carrot"])
+import React, { useState } from 'react';
 
-const handleMin = () => {
-    count > 0 ? setCount(prevCount => prevCount -1) : setCount(count)
+function InitialState() {
+    console.log("run InitialState")
+    return 0
 }
 
-const handlePlus = () => {
-    setCount(prevCount => prevCount +1)
-    console.log(count)
+function UseState() {
 
+    const [count, setCount] = useState(() => InitialState())
+
+    const handleMin = () => {
+        count > 0 ? setCount(prevCount => prevCount -1) : setCount(count)
+    }
+
+    const handlePlus = () => {
+        setCount(prevCount => prevCount +1)
+    }
+
+    return (
+            <div>
+                <button onClick={(handleMin)}>-</button>
+                <span> {count} </span>
+                <button onClick={(handlePlus)}>+</button>
+            </div>
+    )
 }
 
-<div>
-    <button onClick={(handleMin)}>-</button>
-    <span> {count} </span>
-    <button onClick={(handlePlus)}>+</button>
-    <br />
-    { list.map(l => <span>{l}</span>)}
-</div>
+export default UseState;
                 `}
                 </pre>
 
                 <button onClick={(handleMin)}>-</button>
                 <span> {count} </span>
                 <button onClick={(handlePlus)}>+</button>
-                <br />
-                { list.map(l => <span>{l}</span>)}
             </div>
     )
 }

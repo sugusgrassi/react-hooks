@@ -1,5 +1,7 @@
 import React from 'react'
 
+import reactlifecycle from '../images/reactlifecycle.jpg';
+
 function Hooks() {
     return (
         <div>
@@ -12,9 +14,13 @@ function Hooks() {
             <h3>Reglas de Hooks</h3>
             <p>Los Hooks son funciones de JavaScript, pero imponen dos reglas adicionales. Solo llamar Hooks:</p>
             <ul>
-                <li>en el nivel superior. No llames Hooks dentro de loops, condiciones o funciones anidadas.</li>
-                <li>desde componentes de función de React. No Otro lugar válido para llamar Hooks: tus propios Hooks personalizados. </li>
+                <li>En el nivel superior. No llames Hooks dentro de loops, condiciones o funciones anidadas.</li>
+                <li>Desde componentes de función de React. Otro lugar válido para llamar Hooks: personalizados. </li>
             </ul>
+            <figure>
+                <img src={reactlifecycle} style={{width: '100%'}} alt="Diagrama del ciclo de vida de un componente de react" />
+                <figcaption style={{textAlign: "left"}}>Fuente: <a href="https://github.com/Wavez/react-hooks-lifecycle">github.com/Wavez/react-hooks-lifecycle</a></figcaption>
+            </figure>
         </div>
     )
 }
