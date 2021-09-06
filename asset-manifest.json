@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/react-hooks/static/css/main.abb4bb4b.chunk.css",
-    "main.js": "/react-hooks/static/js/main.afb8cb14.chunk.js",
-    "main.js.map": "/react-hooks/static/js/main.afb8cb14.chunk.js.map",
+    "main.js": "/react-hooks/static/js/main.6a660efd.chunk.js",
+    "main.js.map": "/react-hooks/static/js/main.6a660efd.chunk.js.map",
     "runtime-main.js": "/react-hooks/static/js/runtime-main.4ab0e711.js",
     "runtime-main.js.map": "/react-hooks/static/js/runtime-main.4ab0e711.js.map",
-    "static/js/2.809cc12a.chunk.js": "/react-hooks/static/js/2.809cc12a.chunk.js",
-    "static/js/2.809cc12a.chunk.js.map": "/react-hooks/static/js/2.809cc12a.chunk.js.map",
+    "static/js/2.3d771cc3.chunk.js": "/react-hooks/static/js/2.3d771cc3.chunk.js",
+    "static/js/2.3d771cc3.chunk.js.map": "/react-hooks/static/js/2.3d771cc3.chunk.js.map",
     "static/js/3.54d3fde6.chunk.js": "/react-hooks/static/js/3.54d3fde6.chunk.js",
     "static/js/3.54d3fde6.chunk.js.map": "/react-hooks/static/js/3.54d3fde6.chunk.js.map",
     "index.html": "/react-hooks/index.html",
     "static/css/main.abb4bb4b.chunk.css.map": "/react-hooks/static/css/main.abb4bb4b.chunk.css.map",
-    "static/js/2.809cc12a.chunk.js.LICENSE.txt": "/react-hooks/static/js/2.809cc12a.chunk.js.LICENSE.txt"
+    "static/js/2.3d771cc3.chunk.js.LICENSE.txt": "/react-hooks/static/js/2.3d771cc3.chunk.js.LICENSE.txt",
+    "static/media/reactlifecycle.c9d3a4aa.jpg": "/react-hooks/static/media/reactlifecycle.c9d3a4aa.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4ab0e711.js",
-    "static/js/2.809cc12a.chunk.js",
+    "static/js/2.3d771cc3.chunk.js",
     "static/css/main.abb4bb4b.chunk.css",
-    "static/js/main.afb8cb14.chunk.js"
+    "static/js/main.6a660efd.chunk.js"
   ]
 }
