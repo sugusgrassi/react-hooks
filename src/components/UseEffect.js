@@ -1,3 +1,4 @@
+import { CodeOutlined } from '@material-ui/icons';
 import React, { useState, useEffect } from 'react'
 
 function UseEffect() {
@@ -37,11 +38,13 @@ function UseEffect() {
                 <button onClick={() => setCount(prevState => prevState -1)}>-</button>
                 <button onClick={() => setCount(count+1)}>+</button>
                 <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
-                {`
-    useEffect(() => {
-        document.title=${`${count}`}
-    })
-                `}</pre>
+                <code>
+                    {`
+useEffect(() => {
+    document.title=${`${count}`}
+})
+                    `}
+                </code></pre>
                 <h4>Ejemplo cuando se monta y actualiza solo cuando cambia el recurso:</h4>
                 <button onClick={() => setResourceType("posts")}>Posts</button>
                 <button onClick={() => setResourceType("todos")}>todos</button>
@@ -49,18 +52,21 @@ function UseEffect() {
                 {
                     filterArr.map(item => <p key={item.id}>{JSON.stringify(item)}</p>)}
                     <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
-                {`
+                <code>
+                    {`
 useEffect(() => {
     fetch(${`https://jsonplaceholder.typicode.com/${resourceType}`})
     .then(response => response.json())
     .then(json => setItems(json))
     .catch(error => console.log(error))
 }, [resourceType])
-                
-                `}</pre>
+                    
+                    `}
+                </code></pre>
                 <h4>Ejemplo cuando se monta y se desmonta (ver en consola):</h4>
                 <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
-                {`
+                <code>
+                    {`
 useEffect(() => {
     console.log("El recurso cambia")
 
@@ -68,7 +74,8 @@ useEffect(() => {
         console.log("Limpia")
     }
 }, [resourceType]) 
-                `}
+                    `}
+                </code>
                 </pre>
         </div>
     )

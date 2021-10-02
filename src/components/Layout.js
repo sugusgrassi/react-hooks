@@ -51,6 +51,7 @@ function Layout({children}, props) {
         {[{text: 'Intro Hooks', path: '/react-hooks'}, 
             {text: 'useState()', path: '/react-hooks/usestate'}, 
             {text: 'useEffect()', path: '/react-hooks/useeffect'}, 
+            {text: 'useMemo()', path: '/react-hooks/useMemo'}, 
             {text: 'useRef()', path: '/react-hooks/useref'}
             ].map(item => (
             <ListItem button key={item.text} onClick={() => history.push(item.path)}>

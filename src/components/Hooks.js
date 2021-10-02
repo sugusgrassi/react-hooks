@@ -7,7 +7,7 @@ function Hooks() {
         <div>
             <h2>React Hooks</h2>
             <p>Lo llamamos dentro de un componente de función.</p>
-            <p>Los Hooks proporcionan una API más directa a los conceptos que ya conoces de React: props, estado, contexto, referencias, y ciclo de vida</p>
+            <p>Los Hooks proporcionan una API más directa a los conceptos que ya conoces de React: props, estado, contexto, referencias, y ciclo de vida.</p>
             <p>Los Hooks son funciones que te permiten “enganchar” el estado de React y el ciclo de vida desde componentes de función.</p>
             <p>React proporciona algunos Hooks incorporados.</p>
             <p>Son funciones que te permiten “conectarte” a las características de React desde componentes de función.</p>

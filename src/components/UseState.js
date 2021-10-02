@@ -25,7 +25,8 @@ function UseState() {
                 <p>const [ estadoActual, funciónActualizadora ] = useState(estadoInicial o función)</p>
                 <h4>Ejemplo (código y uso):</h4>
                 <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
-                {`
+                <code>
+                    {`
 import React, { useState } from 'react';
 
 function InitialState() {
@@ -55,7 +56,8 @@ function UseState() {
 }
 
 export default UseState;
-                `}
+                    `}
+                </code>
                 </pre>
 
                 <button onClick={(handleMin)}>-</button>

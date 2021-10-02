@@ -1,17 +1,18 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+// import React from 'react';
+// import { NavLink } from 'react-router-dom';
 
-function Navbar() {
-    return (
-        <div>
-            NavBar
-            <br />
-            <NavLink className="navLink" exact={true} activeClassName='is-active' to='/'>Intro Hooks</NavLink>
-            <NavLink className="navLink" exact={true} activeClassName='is-active' to='/usestate'>UseState</NavLink>
-            <NavLink className="navLink" exact={true} activeClassName='is-active' to='/useeffect'>UseEffect</NavLink>
-            <NavLink className="navLink" exact={true} activeClassName='is-active' to='/useref'>UseRef</NavLink>
-        </div>
-    )
-}
+// function Navbar() {
+//     return (
+//         <div>
+//             NavBar
+//             <br />
+//             <NavLink className="navLink" exact={true} activeClassName='is-active' to='/'>Intro Hooks</NavLink>
+//             <NavLink className="navLink" exact={true} activeClassName='is-active' to='/usestate'>UseState</NavLink>
+//             <NavLink className="navLink" exact={true} activeClassName='is-active' to='/useeffect'>UseEffect</NavLink>
+//             <NavLink className="navLink" exact={true} activeClassName='is-active' to='/usememo'>UseMemo</NavLink>
+//             <NavLink className="navLink" exact={true} activeClassName='is-active' to='/useref'>UseRef</NavLink>
+//         </div>
+//     )
+// }
 
-export default Navbar
+// export default Navbar

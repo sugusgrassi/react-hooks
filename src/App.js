@@ -6,6 +6,7 @@ import Hooks from './components/Hooks';
 import UseState from './components/UseState';
 import UseRef from './components/UseRef';
 import UseEffect from './components/UseEffect';
+import UseMEmo from './components/UseMemo';
 import Layout from './components/Layout';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Route path="/react-hooks" exact component={Hooks} />
               <Route path="/react-hooks/usestate" exact component={UseState} />
               <Route path="/react-hooks/useeffect" exact component={UseEffect} />
+              <Route path="/react-hooks/usememo" exact component={UseMEmo} />
               <Route path="/react-hooks/useref" exact component={UseRef} />
             </Switch>
           </Layout>
