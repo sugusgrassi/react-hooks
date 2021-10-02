@@ -15,7 +15,7 @@ function Hooks() {
             <p>Los Hooks son funciones de JavaScript, pero imponen dos reglas adicionales. Solo llamar Hooks:</p>
             <ul>
                 <li>En el nivel superior. No llames Hooks dentro de loops, condiciones o funciones anidadas.</li>
-                <li>Desde componentes de función de React. Otro lugar válido para llamar Hooks: personalizados. </li>
+                <li>Solo llamarlos desde los componentes de función de React o dentro de los Hooks personalizados.</li>
             </ul>
             <figure>
                 <img src={reactlifecycle} style={{width: '100%'}} alt="Diagrama del ciclo de vida de un componente de react" />
