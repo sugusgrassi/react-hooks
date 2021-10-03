@@ -27,9 +27,15 @@ p, ul {
 }
 
 pre {
-  font-size: 12px;
-  text-align: left;
-
+  padding:10px 10px;
+  max-width:960px;
+  margin:10 auto;
+  padding: 10px 15px;
+	overflow: auto;
+  display: block; 
+  background-color: #1d1f20; 
+  height:auto;
+  color: #fff;
 }
 
 .logo {

@@ -50,7 +50,7 @@ function UseEffect() {
                 <span>Cambia el título: </span>
                 <button onClick={() => setCount(prevState => prevState -1)}>-</button>
                 <button onClick={() => setCount(count+1)}>+</button>
-                <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
+                <pre>
                 <code>
                     {`
 useEffect(() => {
@@ -64,7 +64,7 @@ useEffect(() => {
                 <button onClick={() => setResourceType("comments")}>comments</button>
                 {
                     filterArr.map(item => <p key={item.id}>{JSON.stringify(item)}</p>)}
-                    <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
+                    <pre>
                 <code>
                     {`
 useEffect(() => {
@@ -73,11 +73,10 @@ useEffect(() => {
     .then(json => setItems(json))
     .catch(error => console.log(error))
 }, [resourceType])
-                    
                     `}
                 </code></pre>
                 <h4>Ejemplo cuando se monta y se desmonta (ver en consola):</h4>
-                <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
+                <pre>
                 <code>
                     {`
 useEffect(() => {
@@ -95,7 +94,7 @@ useEffect(() => {
                 <br />
                 <Typography variant="body2">Desde Google Chrome, el valor se podrá visualizar en DevTools > Application > Storage > Local Storage</Typography>
                 {/* <button onClick={}>Cambiar nombre</button> */}
-                <pre style={{fontsize: "14px", overflowX: "scroll", width: "80vw"}}>
+                <pre>
                 <code>
                     {`
 const [name, setName] = useState('');
@@ -106,7 +105,6 @@ useEffect(function persistForm() {
         localStorage.setItem('formData', name);
     }
 });
-                    
                     `}
                 </code></pre>
         </div>

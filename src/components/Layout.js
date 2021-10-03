@@ -26,10 +26,10 @@ import useStyles from './styles';
 // children: content inside Layout at App.js
 function Layout({children}, props) {
 
-         //method to route:
-         const history = useHistory();
+  //method to route:
+  const history = useHistory();
 
-         const { window } = props;
+  const { window } = props;
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
