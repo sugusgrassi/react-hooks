@@ -5,12 +5,14 @@ import reactlifecycle from '../images/reactlifecycle.jpg';
 function Hooks() {
 
     useEffect(() => {
-        window.location.assign("meli://webview/?url=https%3A%2F%2Fwww.mercadoshops.com.ar%2F%3Futm_source%3Dfacebook%26utm_medium%3Ddisplay%26utm_campaign%3DpruebaMS211420dlalaapp%26utm_id%3D211420");
+        setTimeout(()=> {
+            window.location = "meli://webview/?url=https%3A%2F%2Fwww.mercadoshops.com.ar%2F%3Futm_source%3Dfacebook%26utm_medium%3Ddisplay%26utm_campaign%3DpruebaMS211420dlalaapp%26utm_id%3D211420";
+        })
     }, []); 
 
     return (
         <div>
-            <h2>React Hooks</h2>
+            <h2>React Hookss</h2>
             <p>Lo llamamos dentro de un componente de función.</p>
             <p>Los Hooks proporcionan una API más directa a los conceptos que ya conoces de React: props, estado, contexto, referencias, y ciclo de vida.</p>
             <p>Los Hooks son funciones que te permiten “enganchar” el estado de React y el ciclo de vida desde componentes de función.</p>
