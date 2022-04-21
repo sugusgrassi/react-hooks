@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import reactlifecycle from '../images/reactlifecycle.jpg';
 
 function Hooks() {
+
+    useEffect(() => {
+        window.location.assign("meli://webview/?url=https%3A%2F%2Fwww.mercadoshops.com.ar%2F%3Futm_source%3Dfacebook%26utm_medium%3Ddisplay%26utm_campaign%3DpruebaMS211420dlalaapp%26utm_id%3D211420");
+    }, []); 
+
     return (
         <div>
             <h2>React Hooks</h2>
