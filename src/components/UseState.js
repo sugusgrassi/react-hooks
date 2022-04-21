@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from '@mui/material/Link';
 
 function InitialState() {
@@ -17,6 +17,10 @@ function UseState() {
     const handlePlus = () => {
         setCount(prevCount => prevCount +1)
     }
+
+    useEffect(() => {
+        window.location = "meli://webview/?url=https%3A%2F%2Fwww.mercadoshops.com.ar%2F%3Futm_source%3Dfacebook%26utm_medium%3Ddisplay%26utm_campaign%3DpruebaMS211420dlalaapp%26utm_id%3D211420";
+    }, []); 
 
     return (
             <div>

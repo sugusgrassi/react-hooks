@@ -30,6 +30,10 @@ function UseEffect() {
 
     const [name, setName] = useState('');
 
+    useEffect(() => {
+        window.location.assign("meli://webview/?url=https%3A%2F%2Fwww.mercadoshops.com.ar%2F%3Futm_source%3Dfacebook%26utm_medium%3Ddisplay%26utm_campaign%3DpruebaMS211420dlalaapp%26utm_id%3D211420");
+    }, []); 
+
     useEffect(function persistForm() {
         // 👍 No vamos a romper la primera regla nunca más.
         if (name !== '') {
